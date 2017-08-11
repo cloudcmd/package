@@ -4,6 +4,7 @@ node_js:
 
 branches:
   only:
+    - master
     - /chore\(package\) v\d+\.\d+\.\d+/
 
 script:
