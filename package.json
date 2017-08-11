@@ -1,0 +1,95 @@
+{
+  "name": "package",
+  "version": "7.2.1",
+  "private": true,
+  "changelog": false,
+  "release": false,
+  "bin": {
+    "cloudcmd": "index.js"
+  },
+  "scripts": {
+    "install:cloudcmd": "echo 'INSTALL...'; npm i cloudcmd",
+    "mv:win": "mv package-win.exe cloudcmd-v`version`-win-x64-standalone.exe",
+    "mv:macos": "mv package-macos cloudcmd-v`version`-macos-x64-standalone",
+    "mv:linux": "mv package-linux cloudcmd-v`version`-linux-x64-standalone",
+    "pack:win": "echo 'PACK WIN...'; onezip -p cloudcmd-v`version`-win-x64-standalone.exe",
+    "pack:macos": "echo 'PACK MAC...'; jaguar -p cloudcmd-v`version`-macos-x64-standalone",
+    "pack:linux": "echo 'PACK LINUX...'; jaguar -p cloudcmd-v`version`-linux-x64-standalone",
+    "rename:win": "mv cloudcmd-v`version`-win-x64-standalone.exe.zip cloudcmd-v`version`-win-x64-standalone.zip",
+    "upload:win": "putasset -l -u coderaiser -r cloudcmd -t v`version` -f cloudcmd-v`version`-win-x64-standalone.zip",
+    "upload:mac": "putasset -l -u coderaiser -r cloudcmd -t v`version` -f cloudcmd-v`version`-macos-x64-standalone.tar.gz",
+    "upload:linux": "putasset -l -u coderaiser -r cloudcmd -t v`version` -f cloudcmd-v`version`-linux-x64-standalone.tar.gz",
+    "pkg": "echo 'PACKAGE...'; pkg .",
+    "build": "redrun pkg mv:* pack:* rename:* upload:* rm",
+    "wisdom:done": "echo https://ci.appveyor.com/project/coderaiser/package/",
+    "rm": "rimraf cloudcmd-v`version`*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudcmd/package.git"
+  },
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudcmd/package/issues"
+  },
+  "homepage": "https://github.com/cloudcmd/package",
+  "devDependencies": {
+    "jaguar": "^3.1.1",
+    "onezip": "^1.0.8",
+    "pkg": "^4.2.2",
+    "putasset": "^2.0.0",
+    "redrun": "^5.0.0",
+    "rimraf": "^2.6.1",
+    "version-io": "^2.0.1"
+  },
+  "dependencies": {
+    "cloudcmd": "*",
+    "gritty": "*"
+  },
+  "pkg": {
+    "scripts": [
+      "node_modules/cloudcmd/bin",
+      "node_modules/cloudcmd/server",
+      "node_modules/cloudcmd/common",
+      "node_modules/gritty/server",
+      "node_modules/ponse/json/ext.json",
+      "node_modules/restafary/server",
+      "node_modules/minify/lib",
+      "node_modules/cloudcmd/json/config.json",
+      "node_modules/join-io/www"
+    ],
+    "assets": [
+      "node_modules/join-io/www",
+      "node_modules/edward/.jshintrc",
+      "node_modules/edward/vendor",
+      "node_modules/edward/dist*",
+      "node_modules/edward/modules",
+      "node_modules/edward/json",
+      "node_modules/dword/.jshintrc",
+      "node_modules/dword/dist*",
+      "node_modules/dword/modules",
+      "node_modules/dword/json",
+      "node_modules/console-io/dist*",
+      "node_modules/console-io/modules",
+      "node_modules/deepword/dist",
+      "node_modules/gritty/dist*",
+      "node_modules/spero/dist*",
+      "node_modules/remedy/dist*",
+      "node_modules/ishtar/dist*",
+      "node_modules/salam/dist*",
+      "node_modules/omnes/dist*",
+      "node_modules/restafary/dist",
+      "node_modules/cloudcmd/tmpl",
+      "node_modules/cloudcmd/html",
+      "node_modules/cloudcmd/dist",
+      "node_modules/cloudcmd/dist-dev",
+      "node_modules/cloudcmd/favicon.ico",
+      "node_modules/cloudcmd/img",
+      "node_modules/cloudcmd/modules",
+      "node_modules/cloudcmd/HELP.md",
+      "node_modules/cloudcmd/package.json",
+      "node_modules/cloudcmd/json"
+    ]
+  }
+}
