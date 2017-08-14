@@ -11,7 +11,7 @@ sudo: false
 
 deploy:
     provider: script
-    script: upload.sh
+    script: npm run build
     skip_cleanup: true
     on:
         tags: true
