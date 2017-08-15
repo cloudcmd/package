@@ -4,7 +4,7 @@
   "private": true,
   "changelog": false,
   "bin": {
-    "cloudcmd": "index.js"
+    "cloudcmd": "node_modules/cloudcmd/bin/cloudcmd.js"
   },
   "scripts": {
     "install:cloudcmd": "echo 'INSTALL...'; npm i cloudcmd",
