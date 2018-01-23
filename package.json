@@ -51,7 +51,7 @@
       "node_modules/cloudcmd/bin",
       "node_modules/cloudcmd/server",
       "node_modules/cloudcmd/common",
-      "node_modules/gritty/server",
+      "node_modules/gritty/server/*",
       "node_modules/ponse/json/ext.json",
       "node_modules/restafary/server",
       "node_modules/minify/lib",
