@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/cloudcmd/package",
   "devDependencies": {
-    "jaguar": "^3.1.1",
+    "jaguar": "^4.0.1",
     "onezip": "^1.0.8",
     "pkg": "^4.2.2",
     "putasset": "^3.0.0",
