@@ -73,6 +73,7 @@
       "node_modules/console-io/modules",
       "node_modules/deepword/dist",
       "node_modules/gritty/dist*",
+      "node_modules/gritty/server",
       "node_modules/spero/dist*",
       "node_modules/remedy/dist*",
       "node_modules/ishtar/dist*",
