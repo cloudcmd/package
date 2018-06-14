@@ -8,6 +8,7 @@
   },
   "scripts": {
     "install:cloudcmd": "echo 'INSTALL...'; npm i cloudcmd",
+    "postinstall:cloudcmd": "echo 'UPDATE CONFIG...'; ./scripts/config.js",
     "mv:win": "mv package-win.exe cloudcmd-v`version`-win-x64-standalone.exe",
     "mv:macos": "mv package-macos cloudcmd-v`version`-macos-x64-standalone",
     "mv:linux": "mv package-linux cloudcmd-v`version`-linux-x64-standalone",
@@ -38,9 +39,11 @@
     "onezip": "^2.0.2",
     "pkg": "^4.2.2",
     "putasset": "^3.0.0",
+    "readjson": "^1.1.4",
     "redrun": "^6.0.4",
     "rimraf": "^2.6.1",
-    "version-io": "^2.0.1"
+    "version-io": "^2.0.1",
+    "writejson": "^1.1.2"
   },
   "dependencies": {
     "cloudcmd": "*",
