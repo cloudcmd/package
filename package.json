@@ -7,6 +7,8 @@
     "cloudcmd": "node_modules/cloudcmd/bin/cloudcmd.js"
   },
   "scripts": {
+    "lint": "redrun lint:*",
+    "lint:json": "jsonlint -q package.json",
     "install:cloudcmd": "echo 'INSTALL...'; npm i cloudcmd",
     "mv:win": "mv package-win.exe cloudcmd-v`version`-win-x64-standalone.exe",
     "mv:macos": "mv package-macos cloudcmd-v`version`-macos-x64-standalone",
@@ -35,6 +37,7 @@
   "homepage": "https://github.com/cloudcmd/package",
   "devDependencies": {
     "jaguar": "^4.0.1",
+    "jsonlint": "^1.6.3",
     "onezip": "^2.0.2",
     "pkg": "^4.2.2",
     "putasset": "^3.0.0",

@@ -7,6 +7,9 @@ notifications:
         on_success: never
         on_failure: change
 
+script:
+  - npm run lint
+
 sudo: false
 
 deploy:
