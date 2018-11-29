@@ -48,7 +48,7 @@
   "dependencies": {
     "cloudcmd": "*",
     "gritty": "*",
-    "ponse": "^2.0.1"
+    "ponse": "^3.3.0"
   },
   "pkg": {
     "scripts": [
