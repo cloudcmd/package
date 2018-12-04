@@ -97,5 +97,8 @@
       "node_modules/cloudcmd/package.json",
       "node_modules/cloudcmd/json"
     ]
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
