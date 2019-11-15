@@ -42,7 +42,7 @@
     "pkg": "^4.2.2",
     "putasset": "^4.0.0",
     "redrun": "^7.0.2",
-    "rimraf": "^2.6.1",
+    "rimraf": "^3.0.0",
     "version-io": "^2.0.1"
   },
   "dependencies": {
