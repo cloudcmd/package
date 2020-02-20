@@ -3,5 +3,5 @@ node_modules
 package-linux
 package-macos
 package-win.exe
-
+yarn-error.log
 
