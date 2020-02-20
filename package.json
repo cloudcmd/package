@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/cloudcmd/package",
   "devDependencies": {
-    "jaguar": "^5.0.0",
+    "jaguar": "^6.0.0",
     "jsonlint": "^1.6.3",
     "onezip": "^3.1.1",
     "pkg": "^4.2.2",
