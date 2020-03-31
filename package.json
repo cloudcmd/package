@@ -1,6 +1,6 @@
 {
   "name": "package",
-  "version": "14.3.5",
+  "version": "14.3.6",
   "private": true,
   "changelog": false,
   "bin": {
