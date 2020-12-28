@@ -39,11 +39,11 @@
   "devDependencies": {
     "jaguar": "^6.0.0",
     "jsonlint": "^1.6.3",
+    "madrun": "^8.3.1",
     "onezip": "^4.0.2",
     "pkg": "^4.2.2",
     "putasset": "^5.0.2",
     "putout": "^12.12.0",
-    "redrun": "^7.0.2",
     "rimraf": "^3.0.0",
     "version-io": "^3.0.0"
   },
