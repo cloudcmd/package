@@ -1,27 +1,23 @@
 language: node_js
 node_js:
-    - 10
-
+  - 15
+  - 14
 os:
-    - linux
-    - osx
-
+  - linux
+  - osx
 notifications:
-    email:
-        on_success: never
-        on_failure: change
-
+  email:
+    on_success: never
+    on_failure: change
 script:
   - npm run lint
-
 sudo: false
-
 deploy:
-    provider: script
-    script: npm run build
-    skip_cleanup: true
-    on:
-        tags: true
-        all_branches: false
-        condition: $TRAVIS_OS_NAME = osx
-
+  provider: script
+  script: npm run build
+  skip_cleanup: true
+  'on':
+    tags: true
+    all_branches: false
+    condition: $TRAVIS_OS_NAME = osx
+cache: false
