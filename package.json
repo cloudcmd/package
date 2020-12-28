@@ -45,7 +45,7 @@
     "putasset": "^5.0.2",
     "putout": "^12.12.0",
     "rimraf": "^3.0.0",
-    "version-io": "^3.0.0"
+    "version-io": "^4.0.1"
   },
   "dependencies": {
     "cloudcmd": "*",
