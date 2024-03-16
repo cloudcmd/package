@@ -1,6 +1,6 @@
 {
   "name": "package",
-  "version": "17.0.7",
+  "version": "17.1.0",
   "private": true,
   "changelog": false,
   "bin": {
