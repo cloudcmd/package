@@ -1,6 +1,6 @@
 {
   "name": "package",
-  "version": "19.1.20",
+  "version": "19.1.21",
   "private": true,
   "changelog": false,
   "bin": {
