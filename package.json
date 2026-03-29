@@ -1,6 +1,6 @@
 {
+  "version": "19.9.11",
   "name": "package",
-  "version": "19.9.10",
   "type": "commonjs",
   "private": true,
   "changelog": false,
