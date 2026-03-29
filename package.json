@@ -1,6 +1,7 @@
 {
   "name": "package",
   "version": "19.9.10",
+  "type": "commonjs",
   "private": true,
   "changelog": false,
   "bin": {
@@ -28,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloudcmd/package.git"
+    "url": "git+https://github.com/cloudcmd/package.git"
   },
   "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
   "license": "MIT",

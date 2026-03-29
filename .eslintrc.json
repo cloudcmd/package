@@ -1,13 +1,7 @@
 {
-    "rules": {
-        "node/no-unpublished-require": "off"
-    },
     "extends": [
-        "plugin:node/recommended",
+        "plugin:n/recommended",
         "plugin:putout/recommended"
     ],
-    "plugins": [
-        "node",
-        "putout"
-    ]
+    "plugins": ["n", "putout"]
 }
