@@ -45,7 +45,7 @@
     "madrun": "^13.0.1",
     "onezip": "^7.0.1",
     "pkg": "^5.8.1",
-    "putasset": "^5.0.2",
+    "putasset": "^7.0.0",
     "putout": "^12.12.0",
     "rimraf": "^3.0.0",
     "version-io": "^4.0.1"
